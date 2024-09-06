@@ -49,6 +49,10 @@ export function proxy(target: Object, sourceKey: string, key: string) {
   Object.defineProperty(target, key, sharedPropertyDefinition)
 }
 
+/**
+ * init props, composition apis(组合式API), methods, data, computed, and watch orderly
+ * @param vm
+ */
 export function initState(vm: Component) {
   const opts = vm.$options
   if (opts.props) initProps(vm, opts.props)

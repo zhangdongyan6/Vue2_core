@@ -18,6 +18,10 @@ import type { Component } from 'types/component'
 import { currentInstance, setCurrentInstance } from 'v3/currentInstance'
 import { syncSetupSlots } from 'v3/apiSetup'
 
+/**
+ * 与内置组件slot有关的初始化
+ * @param vm
+ */
 export function initRender(vm: Component) {
   vm._vnode = null // the root of the child tree
   vm._staticTrees = null // v-once cached trees

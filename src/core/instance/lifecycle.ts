@@ -32,6 +32,10 @@ export function setActiveInstance(vm: Component) {
   }
 }
 
+/**
+ * 初始化声明周期中用到的内置变量标志
+ * @param vm
+ */
 export function initLifecycle(vm: Component) {
   const options = vm.$options
 
